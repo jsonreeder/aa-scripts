@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'Date'
 
 TASKS = [ 'Review solutions',
