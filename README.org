@@ -1,2 +1,4 @@
 #+TITLE: App Academy Tasks
 A simple script that generates the daily tasks for App Academy. I use this to track my work using Emacs ~org-mode~.
+
+I use a custom todo keyword (~SCHD~), which others may wish to change to ~TODO~.

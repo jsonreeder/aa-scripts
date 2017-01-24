@@ -12,13 +12,21 @@ TASKS = [ 'Review solutions',
 PREFIX = 'SCHD'
 
 def prepare_todo(task, prefix, date = Date.today)
-  "* #{prefix} #{task}\n  SCHEDULED: <#{date} #{date.strftime('%a')}>"
+  "* #{prefix} #{task}\n  SCHEDULED: <#{date} #{date.strftime('%a')}>\n"
+end
+
+def prepare_todos
+  output = ""
+  TASKS.each do |task|
+    output << prepare_todo(task, PREFIX)
+  end
+  output
 end
 
 def main
-  TASKS.each do |task|
-    puts prepare_todo(task, PREFIX)
-  end
+  text = prepare_todos
+  puts text
+  system("echo \"#{text}\" | pbcopy")
 end
 
 main
