@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 require 'Date'
 
-TASKS = [ 'Push work to GitHub',
+TASKS = [ 'Process paper notes',
+          'Push work to GitHub',
           'Review solutions',
           'Do readings',
           'Watch videos',
