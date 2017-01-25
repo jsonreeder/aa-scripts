@@ -19,9 +19,7 @@ end
 
 def prepare_todos
   output = ""
-  TASKS.each do |task|
-    output << prepare_todo(task, PREFIX)
-  end
+  TASKS.each { |task| output << prepare_todo(task, PREFIX) }
   output
 end
 
