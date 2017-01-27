@@ -12,4 +12,4 @@ I use a custom todo keyword (~SCHD~), which others may wish to change to
 information from the default for a/A computers to my own.
 
 It is configured with my own name and email, and these should be
-replaced before re-use
+replaced before re-use.
