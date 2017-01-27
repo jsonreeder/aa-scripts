@@ -10,4 +10,3 @@ I use a custom todo keyword (~SCHD~), which others may wish to change to
 * Git Author Rewrite
 ~Git Author Rewrite~ is a bash script to change the email and author
 information from the default for a/A computers to my own.
-
