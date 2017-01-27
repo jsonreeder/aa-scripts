@@ -7,9 +7,13 @@ my work using Emacs ~org-mode~.
 
 I use a custom todo keyword (~SCHD~), which others may wish to change to
 ~TODO~.
+
+To run, enter ~ruby aa_todos.rb~ on the command line.
 * Git Author Rewrite
 ~Git Author Rewrite~ is a bash script to change the email and author
 information from the default for a/A computers to my own.
 
 It is configured with my own name and email, and these should be
 replaced before re-use.
+
+To run, enter ~bash git-author-rewrite.sh~ on the command line.
