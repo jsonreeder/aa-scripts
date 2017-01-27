@@ -16,4 +16,6 @@ information from the default for a/A computers to my own.
 It is configured with my own name and email, and these should be
 replaced before re-use.
 
-To run, enter ~bash git-author-rewrite.sh~ on the command line.
+To run, ~cd~ into the directory whose git history you want to modify, then
+run ~bash $PATH/git-author-rewrite.sh~ on the command line, replacing
+~$PATH~ with the path to wherever you've put the file on your own machine.
