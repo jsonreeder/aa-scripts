@@ -1,4 +1,13 @@
-#+TITLE: App Academy Tasks
-A simple script that generates the daily tasks for App Academy. I use this to track my work using Emacs ~org-mode~.
+#+TITLE: App Academy Scripts
+This repository contains the scripts I wrote / adapted while studying
+at App Academy.
+* a/A Todos
+~a/A Todos~ generates the daily tasks for App Academy. I use this to track
+my work using Emacs ~org-mode~.
 
-I use a custom todo keyword (~SCHD~), which others may wish to change to ~TODO~.
+I use a custom todo keyword (~SCHD~), which others may wish to change to
+~TODO~.
+* Git Author Rewrite
+~Git Author Rewrite~ is a bash script to change the email and author
+information from the default for a/A computers to my own.
+
