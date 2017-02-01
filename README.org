@@ -19,3 +19,13 @@ replaced before re-use.
 To run, ~cd~ into the directory whose git history you want to modify, then
 run ~bash $PATH/git-author-rewrite.sh~ on the command line, replacing
 ~$PATH~ with the path to wherever you've put the file on your own machine.
+
+If you try to run the script twice for the same ~.git~ directory, you will
+receive the following error:
+: Cannot create a new backup.
+: A previous backup already exists in refs/original/
+: Force overwriting the backup with -f
+
+In that case run the following command to remove the backup, and try
+running the script again:
+: rm -rf .git/refs/original
