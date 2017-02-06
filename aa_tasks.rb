@@ -10,7 +10,8 @@ TASKS = [ 'Process paper notes',
           'Review coming exercises',
           'Submit progress report',
           'Do quiz',
-          'Go back to unfinished work' ]
+          'Go back to unfinished work',
+          'Make lunch' ]
 
 PREFIX = 'SCHD'
 
