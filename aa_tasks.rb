@@ -13,15 +13,21 @@ TASKS = [ 'Do readings & watch videos',
 
 PREFIX = 'SCHD'
 
-def prepare_todo(task, prefix, priority, date = Date.today)
-  "* #{prefix} #{task}\n  #{priority}: <#{date} #{date.strftime('%a')}>\n"
+def prepare_todo(task, priority, date)
+  "* #{PREFIX} #{task}\n  #{priority}: <#{date} #{date.strftime('%a')}>\n"
 end
 
 def prepare_todos
+  date = make_weekday(Date.today)
   output = ""
-  TASKS.each { |task| output << prepare_todo(task, PREFIX, "SCHEDULED") }
-  DEADLINES.each { |task| output << prepare_todo(task, PREFIX, "DEADLINE") }
+  TASKS.each { |task| output << prepare_todo(task, "SCHEDULED", date) }
+  DEADLINES.each { |task| output << prepare_todo(task, "DEADLINE", date) }
   output
+end
+
+def make_weekday(date)
+  return date if date.wday.between?(1, 4)
+  make_weekday(date + 1)
 end
 
 def main
