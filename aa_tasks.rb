@@ -1,24 +1,26 @@
 #!/usr/bin/env ruby
 require 'Date'
 
+DEADLINES = [ 'Submit progress report',
+              'Do quiz' ]
+
 TASKS = [ 'Do readings & watch videos',
           'Do homework projects',
-          'Submit progress report',
           'Review coming exercises',
           'Process paper notes',
           'Push work to GitHub / pull it down',
-          'Review solutions',
-          'Do quiz' ]
+          'Review solutions' ]
 
 PREFIX = 'SCHD'
 
-def prepare_todo(task, prefix, date = Date.today)
-  "* #{prefix} #{task}\n  SCHEDULED: <#{date} #{date.strftime('%a')}>\n"
+def prepare_todo(task, prefix, priority, date = Date.today)
+  "* #{prefix} #{task}\n  #{priority}: <#{date} #{date.strftime('%a')}>\n"
 end
 
 def prepare_todos
   output = ""
-  TASKS.each { |task| output << prepare_todo(task, PREFIX) }
+  TASKS.each { |task| output << prepare_todo(task, PREFIX, "SCHEDULED") }
+  DEADLINES.each { |task| output << prepare_todo(task, PREFIX, "DEADLINE") }
   output
 end
 
