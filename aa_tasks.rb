@@ -1,17 +1,14 @@
 #!/usr/bin/env ruby
 require 'Date'
 
-TASKS = [ 'Process paper notes',
-          'Push work to GitHub',
-          'Review solutions',
-          'Do readings',
-          'Watch videos',
-          'Do homework',
-          'Review coming exercises',
+TASKS = [ 'Do readings & watch videos',
+          'Do homework projects',
           'Submit progress report',
-          'Do quiz',
-          'Go back to unfinished work',
-          'Make lunch' ]
+          'Review coming exercises',
+          'Process paper notes',
+          'Push work to GitHub / pull it down',
+          'Review solutions',
+          'Do quiz' ]
 
 PREFIX = 'SCHD'
 
